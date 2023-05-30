@@ -3,7 +3,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 const Model = React.memo((props) => {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/robot_playground/scene-transformed.glb')
+  const { nodes, materials, animations } = useGLTF('./robot_playground/scene-transformed.glb')
   const { actions } = useAnimations(animations, group)
 
   console.log(animations);
@@ -266,5 +266,5 @@ const Model = React.memo((props) => {
   )
 });
 
-useGLTF.preload('/robot_playground/scene-transformed.glb')
+useGLTF.preload('./robot_playground/scene-transformed.glb')
 export default Model;

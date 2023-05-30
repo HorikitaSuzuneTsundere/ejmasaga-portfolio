@@ -3,7 +3,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 const Model = React.memo((props) => {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/ame/ame-transformed.glb')
+  const { nodes, materials, animations } = useGLTF('./ame/ame-transformed.glb')
   const { actions } = useAnimations(animations, group)
 
   console.log(animations);
@@ -64,5 +64,5 @@ const Model = React.memo((props) => {
   )
 });
 
-useGLTF.preload('/ame/ame-transformed.glb')
+useGLTF.preload('./ame/ame-transformed.glb')
 export default Model;
