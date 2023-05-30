@@ -26,7 +26,7 @@ const About = () => {
       <div
         className="absolute w-full h-[100vh]"
         style={{
-          backgroundImage: "url('/nightoutside.jpg')",
+          backgroundImage: "url('./nightoutside.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
